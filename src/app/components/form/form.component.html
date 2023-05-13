@@ -1,0 +1,45 @@
+<div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <h2>Registro de Clientes</h2>
+      </div>
+      <div class="col-md-12 col-lg-12">
+        <h4 class="mb-3">Dados</h4>
+        <form class="needs-validation"  novalidate>
+          <div class="row g-3">
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">CEP</label>
+              <input type="text" #input class="form-control" placeholder="12312-123" value="" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
+            <div class="col-6">
+              <label for="address" class="form-label">Endereço</label>
+              <input type="text" class="form-control" placeholder="{{endereco}}" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Bairro</label>
+              <input type="text" class="form-control"placeholder="{{bairro}}" value="" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <label for="lastName" class="form-label">Estado</label>
+              <input type="text" class="form-control"placeholder="{{estado}}" value="" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Cidade</label>
+              <input type="text" class="form-control" placeholder="{{cidade}}" value="" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
+            <hr>
+            <button  type="submit" class="w-100 btn btn-primary btn-lg" (click)="search(input.value); $event.preventDefault()">
+              Continue</button>
+          </div>
+        </form>
+      </div>
