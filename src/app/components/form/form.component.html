@@ -1,44 +1,45 @@
+
 <div class="container">
     <main>
       <div class="py-5 text-center">
-        <h2>Registro de Clientes</h2>
+        <h1>Registro de Clientes</h1>
       </div>
-      <div class="col-md-12 col-lg-12">
-        <h4 class="mb-3">Dados</h4>
+      <div class="col-md-12 col-lg-12" >
+        <h4 class="mb-3" style="font-weight:bold; color: black;">Dados</h4>
         <form class="needs-validation"  novalidate>
           <div class="row g-3">
             <div class="col-sm-3">
-              <label for="lastName" class="form-label">CEP</label>
+              <label for="lastName" class="form-label" style="font-weight:bold; color: black;">CEP</label>
               <input type="text" #input class="form-control" placeholder="12312-123" value="" required>
               <div class="invalid-feedback">
               </div>
             </div>
             <div class="col-6">
-              <label for="address" class="form-label">Endereço</label>
+              <label for="address" class="form-label" style="font-weight:bold; color: black;">Endereço</label>
               <input type="text" class="form-control" placeholder="{{endereco}}" required>
               <div class="invalid-feedback">
               </div>
             </div>
             <div class="col-sm-6">
-              <label for="lastName" class="form-label">Bairro</label>
+              <label for="lastName" class="form-label" style="font-weight:bold; color: black;">Bairro</label>
               <input type="text" class="form-control"placeholder="{{bairro}}" value="" required>
               <div class="invalid-feedback">
               </div>
             </div>
             <div class="col-sm-2">
-              <label for="lastName" class="form-label">Estado</label>
+              <label for="lastName" class="form-label" style="font-weight:bold; color: black;">Estado</label>
               <input type="text" class="form-control"placeholder="{{estado}}" value="" required>
               <div class="invalid-feedback">
               </div>
             </div>
             <div class="col-sm-3">
-              <label for="lastName" class="form-label">Cidade</label>
+              <label for="lastName" class="form-label" style="font-weight:bold; color: black;">Cidade</label>
               <input type="text" class="form-control" placeholder="{{cidade}}" value="" required>
               <div class="invalid-feedback">
               </div>
             </div>
             <hr>
-            <button  type="submit" class="w-100 btn btn-primary btn-lg" (click)="search(input.value); $event.preventDefault()">
+            <button type="submit" class="button" (click)="search(input.value); $event.preventDefault()">
               Continue</button>
           </div>
         </form>
